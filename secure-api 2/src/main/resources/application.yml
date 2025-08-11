@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: secure-api
+
+  # Activate the JWT profile by default. When you configure an external
+  # identity provider (IDP) you can switch to an 'oidc' profile and
+  # configure issuer-uri accordingly.
+  profiles:
+    active: local-jwt
+
+server:
+  port: 8080
+
+# This file may include additional configuration, such as CORS or
+# actuator endpoints, depending on your needs.
